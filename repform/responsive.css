@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Proxima-nova";
+    src: url(../font/Mark\ Simonson\ \ Proxima\ Nova\ Regular.otf);
+}
+body{
+    font-family: "Proxima-nova";
+    height: 100vh;
+}
+
+.card-container {
+    max-width: 45em;
+    height: 18em; /* Changed to auto for dynamic height */
+    margin: 2em auto; /*Center the container*/
+}
+.container-1{
+    min-height: 100%;
+    min-width: 100%;
+    padding: 1.2em;
+    border-radius:2em ;
+    box-shadow: 0 0 4px #0b0345;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em; 
+}
+
+.profile-header .details {
+    display: flex;
+    align-items: center;
+}
+.more-details{
+    display: block;
+    margin-right: 1em;
+    line-height: 23px;
+}
+.more-details p{
+    font-weight: 600;
+}
+
+.profile-header .details img.profile-picture {
+    width: 45px;
+    height: 45px; 
+    margin-right: 1em; 
+    border: #0b0345 transparent 1px;
+    background-color: #d6d3d3;  
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.date {
+    font-size: 0.9em; 
+}
+
+.subject-link {
+    text-decoration: none;
+    color: #0b0345;
+    margin-right: 0.5em; /* Added margin for spacing */
+    transition: text-decoration .2s ease-in;
+}
+
+.subject-link:hover{
+    text-decoration: underline;
+}
+
+.indicator {
+    margin-top: 1em; /* Added margin for spacing */
+}
+
+.right-button {
+    background-color: #0b0345; /* Changed button color */
+    color: #fff; /* Changed button text color */
+    border: none;
+    padding: 0.5em 1em; /* Added padding for better appearance */
+    border-radius: 4px; /* Added border radius for rounded corners */
+    cursor: pointer;    
+    transition: all .1s ease;
+    box-shadow: 0 0 4px #0b0345;
+    font-variant: small-caps;
+}
+
+/* Question design */
+.questions{
+    margin:  2em;
+}
+
+/* button */
+.view-ans{
+    margin-top: 1.2em;
+    padding: .9em 1.7em;
+    border-radius: 2em;
+    background-color: #0b0345;
+    font-variant: small-caps;
+    color: white;
+    font-size: .9em;
+    outline: none;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 0 4px #0b0345;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.view-ans:hover {
+    background-color: #fff; 
+    color: #0b0345; 
+    box-shadow: 0 0 8px #0b0345;
+}
+
+
+.view-ans:active {
+    background-color: #d6d3d3;
+    color: #0b0345;
+    box-shadow: 0 0 4px #0b0345; 
+    transform: scale(0.95);
+}
+
+/* Box answer */
+
+
